@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="description" content=""/>
+<title>Graphics - Stephen</title>   
+
+<!-- Mobile Specifics -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>   
+
+<!-- Bootstrap -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Main Style -->
+<link href="assets/css/main.css" rel="stylesheet">
+
+<!-- Responsive -->
+<link href="assets/css/responsive.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+<!-- Fav Icon -->
+<link rel="shortcut icon" href="#">
+
+<link rel="apple-touch-icon" href="#">
+<link rel="apple-touch-icon" sizes="114x114" href="#">
+<link rel="apple-touch-icon" sizes="72x72" href="#">
+<link rel="apple-touch-icon" sizes="144x144" href="#">
+
+<!-- Modernizr -->
+<script src="assets/js/modernizr.js"></script>
+<script src="assets/js/header.js"></script>
+</head>
+
+
+<body>
+
+<main-header></main-header>
+
+<section id="single-team" class="container">
+
+<!-- Start Intro Box -->
+<section id="intro-box" class="margin-0">
+	<div class="container">
+        <div class="row">
+            <div class="span6">
+                <h3>Graphics Projects</h3>
+            </div> 
+            <div class="span6">
+                <p>Graphics related projects.</p>
+            </div> 
+        </div>
+    </div>
+</section>
+<!-- End Intro Box -->
+
+<hr>
+
+<!-- Teams Project -->
+<section class="margin-0">
+    <div class="container">
+        <div class="row">
+            <div class="span6">
+                <h3>Teams Project</h3>
+                <br />
+                <h6>
+                    <p>Year: 2023<br /> <br />
+                        University of Bristol <br /> <br />
+                        3 Months<br /> <br /><br /> <br /><br /> <br /><br /> <br /></p>
+                </h6><img class="image" src="assets/img/grass-architecture.png" alt="About" , style="width: 50%;">
+                <p><i>Flow chart for the grass instancing architecture</i></p>
+                <br /><br />
+            </div>
+            <div class="span6">
+                <ul> 
+                    <li>Creating a system for instancing foliage, using indirect instancing and compute shaders to keep all data and instancing logic on the GPU. </li>
+                    <li>Game was run on Valve Index, so all shaders had to be optimised to work on VR.</li>
+                    <li>Instanced grass positions sampled from a grid in front of the camera. Various optimisations implemented like variable density, level of detail and front-to-back render ordering to reduce overdraw. </li>
+                    <li>Grass and other instancing systems culled on the GPU via compute shader using frustrum and occlusion culling (4:31). </li>
+                    <li>Translucent shader created for foliage with support for wind and texture atlases, including injected support for instancing (3:18). </li>
+                    <li>Fog (3:35) and cloud shader from previous projects. </li>
+                    <li>Procedural asset scattering on the GPU, including a distance field generator to scatter depending on the distance to obstacles (4:50). </li>
+                    <li>Achieved 80% grade, making it the top team in the cohort. </li>
+                </ul>
+
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2H-Qpqbo92M?si=d3PxyvwllVj8uDAB"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                    <img class="image" src="assets/img/gen-instancing.png" alt="About">
+                    <p><i>Flow chart for the general instancing architecture</i></p>    
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End Teams Project -->
+
+<hr>
+
+<!-- Graphics Project -->
+
+<section class="margin-0">
+    <div class="container">
+        <div class="row">
+            <div class="span6">
+                <h3>Computer Graphics Coursework</h3>
+                <br />
+                <h6>
+                    <p>Year: 2022<br /> <br />
+                        University of Bristol <br /> <br />
+                        3 Months</p>
+                </h6>
+                <br /><br />
+            </div>
+            <div class="span6">
+                <ul>
+                    <li>Written in C++ with SDL and GLM. </li>
+                    <li>Created a wireframe and triangle rasteriser with texture projection. </li>
+                    <li>Raytracer supports coloured transmission, refraction, reflection and diffuse lighting. Uses diffuse and specular
+                        shading, supports
+                        normal maps and other PBR maps. </li>
+                    <li>Indirect lighting using photon maps. </li>
+                    <li>Achieved 87% grade, joint best in the cohort. </li>
+                </ul>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oaaO2hCJNBQ?si=ZkJApEI7ingRvQ_b"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End Graphics Project -->
+
+<hr>
+
+<!-- SSF Project -->
+
+<section class="margin-0">
+    <div class="container">
+        <div class="row">
+            <div class="span6">
+                <h3>Screnspace Fluids</h3>
+                <br />
+                <h6>
+                    <p>Year: 2022<br /> <br />
+                </h6>
+                <img class="image" src="assets/img/lava.gif"></img>
+                <br /><br />
+            </div>
+            <div class="span6">
+                <ul>
+                    <li>Screenspace fluids by rendering to a separate buffer and blurring depth and normals. </li>
+                    <li>Used in a variety of VFX effects, examples show lava and fire using the effect on Unity's particle systems. </li>
+                </ul>
+                <img class="image" src="assets/img/fire.gif"></img>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End Graphics Project -->
+
+<hr>
+
+<!-- Clouds Project -->
+
+<section class="margin-0">
+    <div class="container">
+        <div class="row">
+            <div class="span6">
+                <h3>Raymarched Clouds</h3>
+                <br />
+                <h6>
+                    <p>Year: 2021<br /> <br />
+                </h6><img class="image" src="assets/img/godray.gif"></img>
+                <br /><br />
+            </div>
+            <div class="span6">
+                <ul>
+                    <li>Volumetric clouds rendered in a raymarched post-process effect. Optimised for realtime, lighting effects and dynamic weather. </li>
+                    <li>Includes a 'godray' effect, using both the depth mask and a cloud mask to render godrays. </li>
+                </ul>
+                <img class="image" src="assets/img/clouds full.gif"></img>
+                <img class="image" src="assets/img/clouds2.gif"></img>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End Clouds Project -->
+
+<hr>
+
+<!-- Ocean Project -->
+
+<section class="margin-0">
+    <div class="container">
+        <div class="row">
+            <div class="span6">
+                <h3>Ocean Shader</h3>
+                <br />
+                <h6>
+                    <p>Year: 2021<br /> <br />
+                </h6>
+                <img class="image" src="assets/img/wave.gif"></img>
+            </div>
+            <div class="span6">
+                <ul>
+                    <li>Ocean shader with Gerstner waves, refraction, translucency and screen-space reflections. </li>
+                    <li>Also features dynamic waves and foam, with the waves able to effect physics objects in the game. </li>
+                </ul>
+                <img class="image" src="assets/img/oceanwaves.gif"></img>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End Ocean Project -->
+
+<main-footer></main-footer>
+
+</body>
+</html>
